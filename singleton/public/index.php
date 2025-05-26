@@ -1,7 +1,7 @@
 <?php
-require('../vendor/autoload.php');
 
+require_once __DIR__ . '/../app/Config.php';
 
-# TODO: Récuperer une instance de Config
-# Afficher une valeur contenu dans config.php
-# Récupérer une seconde instance de Config et vérifié que les deux instances sont identiques
+$config = Config::getInstance();
+
+echo $config->get('app_name'); 
