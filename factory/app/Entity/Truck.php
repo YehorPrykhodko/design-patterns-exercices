@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Entity;
-
-class Truck {
+require_once __DIR__ . '/../VehicleInterface.php';
+class Truck implements VehicleInterface {
     private $costPerKm;
     private $fuelType;
 
